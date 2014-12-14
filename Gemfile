@@ -36,6 +36,17 @@ gem 'simple_form'
 # For User Authentication
 gem 'devise', '>= 3.2.4'
 
+gem 'carrierwave'
+
+# Keeping passwords secret
+gem 'figaro'
+
+# For CarrierWave to communicate with Amazon S3
+gem "fog", "~> 1.3.1"
+
+# for image manipulation
+gem 'mini_magick'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
