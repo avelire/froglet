@@ -6,7 +6,8 @@ Newfangler::Application.routes.draw do
   end
   resources :lessons, :only => [:show]
   namespace :instructor do
-    resources :lessons, :only => [:update]
+    resources :lessons, :only => [:update] # for sorting with ajax
+    resources :sections, :only => [:update] # for sorting with ajax
     resources :sections, :only => [] do
       resources :lessons, :only => [:new, :create]
     end
